@@ -1,0 +1,14 @@
+import "sort"
+func findcontentChildren(g []int,s []int) int {
+    sort.Ints(g)
+    sort.Ints(s)
+    gi,si,res :=0,0,0
+    for gi<len(g) && si<len(s){
+        if(g[gi] <= s[si]){
+            gi++
+            res++
+        }
+        si++
+    }
+    return res
+}

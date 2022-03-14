@@ -1,0 +1,15 @@
+func candy(ratings []int) (ans int) {
+   size:=len(ratings)
+   left := make([]int size)
+   for i, r :=range ratings{
+       if i>0 && r > ratings[i-1]{
+           left[i] = left[i-1]+1
+       }else{
+           left[i] = 1
+       }
+   }
+   right := 0
+   for i:= size-1;i>=0;i--{
+       
+   }
+}
